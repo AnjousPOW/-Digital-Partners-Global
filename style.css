@@ -1,0 +1,68 @@
+
+/* Устанавливаем фоновое изображение на странице */
+body {
+  background: url("Kosmos_fon.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Центрируем контейнер */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Стилизуем форму */
+  form {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  
+   /* Стилизуем поля ввода */
+  .form-control {
+    font-size: 16px;
+    border-radius: 0;
+  }
+  
+   /* Стилизуем метки */
+  label {
+    font-weight: bold;
+  }
+  
+   /* Стилизуем кнопку отправки формы */
+  .btn-primary {
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  /* Стилизуем сообщение об ошибке */
+  .invalid-feedback {
+    display: none;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #dc3545;
+  }
+  
+  /* Отображаем сообщение об ошибке, если поле ввода неверно заполнено */
+  .is-invalid + .invalid-feedback {
+    display: block;
+  }
+  
+  /* Стилизуем правильно заполненное поле ввода */
+  .is-valid {
+    border-color: #28a745;
+  }
+  
+  /* Стилизуем неправильно заполненное поле ввода */
+  .is-invalid {
+    border-color: #dc3545;
+  }
